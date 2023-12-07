@@ -1,22 +1,29 @@
 <script setup>
-import{ }
+import{RouterView,RouterLink} from 'vue-router'
 </script>
 
 <template>
-  <h1>Наша главная страница</h1>
+<header>
+<ul>
+    <li><RouterLink to="/">Главная</RouterLink></li>
+    <li><RouterLink to="/about">О нас</RouterLink></li>
+    <li><RouterLink to="/blog">Блог</RouterLink></li>
+    <li><a href="">Ссылка</a></li>
+</ul>    
+</header>  
+<main>
+    <RouterView />
+</main>  
+<footer>
+<ul>
+    <li><RouterLink to="/">Главная</RouterLink></li>
+    <li><RouterLink to="about">О нас</RouterLink></li>
+    <li><RouterLink to="blog">Блог</RouterLink></li>
+    <li><a href="">Ссылка</a></li>  
+</ul>    
+</footer>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>
