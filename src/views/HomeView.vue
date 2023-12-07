@@ -1,6 +1,8 @@
 <template>
     <div>
         <h1>Главная</h1>
+        <h1>О нас</h1>
+        <h1>Блог</h1>
     </div>
 
 </template>
@@ -19,7 +21,7 @@ export default{
     },
     async beforeMount(){
 
-    },
+    }
 }
 </script>
 
